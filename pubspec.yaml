@@ -7,8 +7,10 @@ environment:
   sdk: '>=3.0.6 <4.0.0'
 
 dependencies:
+  photo_view: ^0.14.0
   flutter:
     sdk: flutter
+
 
 dev_dependencies:
   flutter_test:

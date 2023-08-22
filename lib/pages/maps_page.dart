@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lineup/agents/viper_lineups.dart';
 
 import '../navigate.dart';
 
@@ -42,8 +43,8 @@ class MapsPage extends StatelessWidget {
           itemBuilder: (context, mapIndex) {
             return GestureDetector(
               onTap: () {
-                // navigator page yönlendir. 2 index ile. agentIndex ve mapIndex ile
-                 Navigator.push(context, MaterialPageRoute(builder: (context) => Navigate(agentIndex: agentIndex, mapIndex: mapIndex)));
+                // lineuplara yönlendir
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => const ViperLineups()));
               },
               child: Container(
                 width: MediaQuery.of(context).size.width,
